@@ -4,13 +4,17 @@
 YugJapanese Website
 
 ## Project Description
-This project is dedicated exclusively to the development, deployment, and maintenance of the official YugJapanese website.
+This project is dedicated exclusively to the development, deployment, and maintenance of the official YugJapanese learning website.
 
-The website is a standalone product separate from the Flutter application.
+The website is a standalone web learning product separate from the Flutter application.
+
+It should help users learn Japanese directly on the web, following the same educational direction as the app: Hiragana first, then Katakana, then Kanji, with practice, review, progress, and clear guidance.
 
 Its primary goals are:
 
-- Showcase YugJapanese professionally.
+- Help users learn Japanese through the website.
+- Provide web-based lessons and practice flows.
+- Mirror the app's learning purpose and structure where appropriate.
 - Provide APK downloads.
 - Display release notes.
 - Explain features.
@@ -77,6 +81,11 @@ Use semantic HTML wherever possible.
 
 ## Primary Pages
 - Home
+- Learn
+- Lessons
+- Practice
+- Review
+- Progress
 - Download
 - Features
 - Screenshots
@@ -97,13 +106,15 @@ Use semantic HTML wherever possible.
 - Community
 
 ## Website Goals
-1. Introduce YugJapanese.
-2. Explain why it is different.
-3. Allow users to download the latest APK.
-4. Help users install the application.
-5. Host official documentation.
-6. Improve discoverability through search engines.
-7. Serve as the official home of YugJapanese.
+1. Help users start learning Japanese directly from the website.
+2. Teach Hiragana, Katakana, and Kanji in a structured order.
+3. Provide web-based practice, review, and progress experiences.
+4. Explain why YugJapanese is different.
+5. Allow users to download the latest APK.
+6. Help users install the application.
+7. Host official documentation.
+8. Improve discoverability through search engines.
+9. Serve as the official home of YugJapanese.
 
 ## Development Rules
 - Maintain clean architecture.
@@ -212,4 +223,3 @@ Friendly, professional, encouraging, and educational.
 
 Visual Identity:
 Modern minimalism inspired by Japanese aesthetics with clean typography, generous whitespace, and subtle accent colors.
-

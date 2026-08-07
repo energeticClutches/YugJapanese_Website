@@ -14,7 +14,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "YugJapanese | Offline-first Japanese learning",
+    default: "YugJapanese | Learn Japanese from zero",
     template: "%s | YugJapanese",
   },
   description: siteConfig.description,

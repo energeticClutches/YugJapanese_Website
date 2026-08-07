@@ -11,8 +11,8 @@ export function SiteFooter() {
             YugJapanese
           </Link>
           <p>
-            Making Japanese learning accessible through a beautiful,
-            offline-first experience.
+            Learn Hiragana, Katakana, and Kanji in a clear order. Free, with no
+            account and no ads.
           </p>
         </div>
         <div className="footer-links">

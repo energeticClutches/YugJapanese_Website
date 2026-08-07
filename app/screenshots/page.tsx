@@ -28,16 +28,16 @@ export default function ScreenshotsPage() {
           </div>
           <div className="interface-panel">
             <div className="mini-row">
-              <strong>Daily practice</strong>
-              <p>Readable practice cards with visible progress.</p>
+              <strong>Handwriting practice</strong>
+              <p>Trace and write characters with real-time stroke accuracy scoring.</p>
             </div>
             <div className="mini-row">
-              <strong>Review flow</strong>
-              <p>Vocabulary and kana moments are kept simple and calm.</p>
+              <strong>Spaced repetition review</strong>
+              <p>Learned characters resurface right when you&apos;re about to forget them.</p>
             </div>
             <div className="mini-row">
-              <strong>Offline mode</strong>
-              <p>Downloads and availability are treated as first-class details.</p>
+              <strong>Progress dashboard</strong>
+              <p>Streaks, achievements, and analytics show exactly where you stand.</p>
             </div>
           </div>
         </div>

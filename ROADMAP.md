@@ -1,141 +1,41 @@
 # Roadmap
 
-## Milestone 1: Project Foundation
+`WEBSITE_MILESTONES.md` is the authoritative milestone plan for this website. It carries the objective, scope, constraints, deliverables, verification steps, documentation updates, commit recommendation, and status for each of the 30 milestones.
 
-### Objective
+This file previously kept a second, separate milestone list written when the website was scoped as a download and marketing site. That list numbered its milestones differently from `WEBSITE_MILESTONES.md`, so the two disagreed about what a given milestone number meant. It has been removed rather than maintained in parallel.
 
-Set up the website's documentation, architecture rules, and brand direction.
+## Current position
 
-### Scope
+Completed:
 
-- Project context
-- Brand guidelines
-- Documentation baseline
-- Folder structure planning
+- Milestone 1 — Website Learning Product Foundation
+- Milestone 2 — Next.js Learning Platform Bootstrap
+- Milestone 3 — Learning Design System
+- Milestone 4 — Site Shell And Learning Navigation
+- Milestone 5 — Learning Homepage
+- Milestone 6 — Learning Content Model
+- Milestone 7 — Hiragana Lesson Pages
+- Milestone 8 — Katakana Lesson Pages
+- Milestone 9 — Kanji Foundation Lessons
+- Milestone 10 — Practice Mode Foundation
+- Milestone 11 — Writing Practice Foundation
+- Milestone 12 — Review Mode
+- Milestone 13 — Progress Tracking
+- Milestone 14 — Audio And Pronunciation (architecture only — no audio exists)
+- Milestone 15 — Search And Mini Dictionary
 
-### Constraints
+Next:
 
-- Do not change the Flutter application
-- Keep the website repository separate
-- Favor maintainable structure over quick fixes
+- Milestone 16 — Learning Analytics
 
-### Deliverables
+## Known gaps
 
-- Project context document
-- README
-- Project log
-- Changelog
-- Roadmap
-- License
-
-### Verification Steps
-
-- Confirm the repository documents the project goals and rules clearly
-- Confirm the website scope is separate from the Flutter app
-- Confirm the stack and page priorities are recorded
-
-### Documentation Updates
-
-- Update `PROJECT_CONTEXT.md` when requirements change
-- Record progress in `PROJECT_LOG.md`
-- Note user-visible changes in `CHANGELOG.md`
-
-### Commit Recommendations
-
-- Use one commit per milestone
-- Keep commits focused on a single theme
-- Avoid unrelated cleanup in foundation commits
-
-## Milestone 2: Site Shell
-
-### Objective
-
-Create the initial Next.js website shell and shared layout system.
-
-### Scope
-
-- App Router structure
-- Shared layout
-- Global metadata
-- Core navigation
-- Base styling system
-
-### Constraints
-
-- Minimize client-side JavaScript
-- Use semantic HTML
-- Keep bundle size small
-
-### Deliverables
-
-- Homepage shell
-- Shared layout and navigation
-- SEO metadata setup
-
-### Verification Steps
-
-- Confirm responsive rendering on desktop and mobile
-- Confirm metadata is present
-- Confirm the layout remains accessible and readable
-
-### Documentation Updates
-
-- Update `PROJECT_LOG.md`
-- Add release notes to `CHANGELOG.md`
-
-### Commit Recommendations
-
-- Separate layout work from page content work
-- Keep styling changes cohesive
-
-### Status
-
-Completed on 2026-07-28.
-
-## Milestone 3: Core Content
-
-### Objective
-
-Ship the main user-facing pages for downloads, features, support, and trust.
-
-### Scope
-
-- Download page
-- Features page
-- Screenshots page
-- FAQ
-- Privacy Policy
-- Credits
-- Changelog
-- Contact
-
-### Constraints
-
-- Keep content concise and useful
-- Prioritize clarity and accessibility
-
-### Deliverables
-
-- Core marketing and support pages
-- Download instructions
-- Release information
-
-### Verification Steps
-
-- Confirm pages are reachable
-- Confirm page copy matches the brand voice
-- Confirm download and support information is clear
-
-### Documentation Updates
-
-- Update `PROJECT_LOG.md`
-- Update `CHANGELOG.md`
-
-### Commit Recommendations
-
-- Group related pages together
-- Keep copy and layout changes in reviewable chunks
-
-### Status
-
-Initial version completed on 2026-07-28.
+- Lesson coverage is partial. Each script has five lessons: Hiragana and Katakana cover the vowels and the K, S, T, and N rows only, which is 25 of the 46 basic kana. Dakuten, handakuten, combination sounds, and ん are not taught. Kanji covers 25 characters.
+- No pronunciation audio exists. `public/` contains no audio files and none have been recorded or licensed, so `audioManifest` is empty and lesson cards show written guidance only. The playback path is built and will activate as soon as clips are registered.
+- Stroke-order data is not authored. `StrokeMetadata` holds kanji stroke counts only, and the `note` field is unused. Writing practice therefore shows the finished character as a tracing guide and performs no stroke scoring or stroke-order checking.
+- Review is not spaced repetition. There is no per-character history, so questions are drawn at random rather than scheduled by how well a character was known last time.
+- Practice and review draw from a whole script or set at a time. There is no per-lesson practice, though `PracticePrompt` carries `lessonSlug` for it.
+- Search has no favorites or history, both of which appear in the Milestone 15 scope. They imply stored per-user state and belong with progress work.
+- Progress is per-browser. It does not sync across devices, and clearing browser data removes it.
+- The Download page has no APK asset. The download link points at `public/downloads/yugjapanese-latest.apk`, which does not exist.
+- The Privacy Policy now describes real behaviour, but it has not been reviewed by anyone qualified to review legal text.

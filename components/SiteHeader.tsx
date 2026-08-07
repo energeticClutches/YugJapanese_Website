@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Download, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { navItems } from "@/lib/site";
 
 export function SiteHeader() {
@@ -18,9 +18,8 @@ export function SiteHeader() {
           ))}
         </div>
         <div className="header-actions">
-          <Link className="nav-download" href="/download">
-            <Download aria-hidden="true" size={18} />
-            APK
+          <Link className="nav-cta" href="/learn">
+            Start learning
           </Link>
           <details className="mobile-nav">
             <summary className="mobile-nav-toggle" aria-label="Open menu">
